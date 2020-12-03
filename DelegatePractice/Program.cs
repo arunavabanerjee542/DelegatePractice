@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace DelegatePractice
 {
+
+    // in first few lines of code i practiced some basic examples of delegates
+   
+    // then i have  used the delegate to  verify if the salary of an employee is greater than 2000 then print his/her name
+
+    // if we want to change out verification logic of my Employee class the we can do 
+   //  so by changing the logic of the method to which our delegate is pointing, thus alowing us not perform any change in the employee class
+
+
+
+
     delegate string dd(string s); 
 
     public delegate void del();
@@ -119,8 +130,9 @@ namespace DelegatePractice
 
             foreach(Employee e in l)
             {
-                if(v(e))
-                {
+                if(v(e))                           // here v is a delegate and we see that if we 
+                {                                  // want to change out verification logic the we can do 
+                                                    // do so by changing the logic of the method to which our delegate is pointing, thus alouing us not perform any change in the employee class
                     Console.WriteLine(e.name);
                 }
             }
